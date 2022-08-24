@@ -4,7 +4,7 @@ import Tab from "../component/Tab";
 
 export default function Setting() {
   return (
-    <div className="w-base m-auto bg-white min-h-screen box-border">
+    <div className="max-w-480 m-auto bg-white min-h-screen box-border">
       <NavSetting />
       <SectionSetting />
       <Tab />

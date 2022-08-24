@@ -19,6 +19,16 @@ export default function Content({ changePage }) {
           return (
             <div className="drop-shadow text-xs bg-white rounded-md" key={i}>
               <div className="flex flex-col gap-2">
+                <img src={item.urls.full} alt="" className="rounded-xl" />
+                <div className="flex w-full justify-between items-center px-2">
+                  <p>{item.alt_description}</p>
+                  <img
+                    src="./icon/more.png"
+                    alt=""
+                    width={"16px"}
+                    height={"16px"}
+                  />
+                </div>
                 <div className="flex justify-between items-center p-2 bg-white rounded-md drop-shadow">
                   <div className="flex gap-2 items-center">
                     <img
@@ -37,16 +47,6 @@ export default function Content({ changePage }) {
                     />
                     {item.likes}
                   </div>
-                </div>
-                <img src={item.urls.full} alt="" className="rounded-xl" />
-                <div className="flex w-full justify-between items-center px-2">
-                  <p>{item.alt_description}</p>
-                  <img
-                    src="./icon/more.png"
-                    alt=""
-                    width={"16px"}
-                    height={"16px"}
-                  />
                 </div>
               </div>
             </div>
