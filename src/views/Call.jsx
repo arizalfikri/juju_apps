@@ -6,8 +6,8 @@ export default function Call() {
   return (
     <div className="max-w-480 m-auto bg-white min-h-screen box-border">
       <NavCall />
-      <ListContact />
-      <Tab />
+      <ListContact description={"Missed"} />
+      <Tab page={"calls"} />
     </div>
   );
 }

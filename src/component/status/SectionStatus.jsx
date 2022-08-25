@@ -1,13 +1,8 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
-export default function SectionStatus({ carousel, length, setLength }) {
+export default function SectionStatus({ carousel, length }) {
   const data = useSelector((store) => store.dataReducer.data);
-
-  useEffect(() => {
-    setLength(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
   return (
     <div className="flex flex-col min-h-screen justify-between p-6">
       <div className="flex justify-between gap-6 items-center px-4">
@@ -30,9 +25,9 @@ export default function SectionStatus({ carousel, length, setLength }) {
               return (
                 <motion.img
                   key={i}
-                  src={el.urls.full}
+                  src={el.urls.thumb}
                   alt=""
-                  className="rounded-md max-h-[50px] min-w-[90px]"
+                  className="rounded-md max-h-[50px] object-cover min-w-[90px]"
                 />
               );
             })}

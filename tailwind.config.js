@@ -8,9 +8,12 @@ module.exports = {
     extend: {
       colors: {
         blue: {
-          DEFAULT: "#54BAB9",
+          1: "#474ed7",
+          2: "#032c69",
+          DEFAULT: "#031f4b",
         },
         white: {
+          1: "#f7f7f7c0",
           DEFAULT: "#ffffff",
         },
         gray: {
@@ -27,11 +30,12 @@ module.exports = {
         base: "0px 4px 24px rgba(0, 0, 0, 0.06)",
         "1xl": "0px 2px 5px -1px rgba(0,0,0,0.71)",
       },
-      opacity: {
-        2: "0.02",
-      },
       backgroundImage: {
         status: "url('../public/img/kucing.jpg')",
+      },
+      transitionProperty: {
+        height: "height",
+        spacing: "margin, padding",
       },
     },
   },

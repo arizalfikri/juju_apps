@@ -1,6 +1,7 @@
-import { DATA } from "../actions/actionType";
+import { DATA, FETCH_ONE_DATA } from "../actions/actionType";
 let initialState = {
   data: [],
+  oneData: [],
 };
 
 export default function dataReducer(state = initialState, action) {
@@ -9,6 +10,11 @@ export default function dataReducer(state = initialState, action) {
       return {
         ...state,
         data: action.payload,
+      };
+    case FETCH_ONE_DATA:
+      return {
+        ...state,
+        oneData: action.payload,
       };
     default:
       return state;

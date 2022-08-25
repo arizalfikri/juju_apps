@@ -7,7 +7,7 @@ export default function Setting() {
     <div className="max-w-480 m-auto bg-white min-h-screen box-border">
       <NavSetting />
       <SectionSetting />
-      <Tab />
+      <Tab page={"setting"} />
     </div>
   );
 }
