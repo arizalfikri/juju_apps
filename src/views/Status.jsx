@@ -7,7 +7,7 @@ export default function Status() {
     setLength(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
   return (
-    <div className="max-w-480 m-auto bg-cover bg-status bg-no-repeat">
+    <div className="max-w-480 m-auto">
       <SectionStatus carousel={carousel} length={length} />
     </div>
   );
